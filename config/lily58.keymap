@@ -167,11 +167,11 @@
 
             label = "DEFAULT";
             bindings = <
-&kp ESC             &kp N1  &kp N2  &kp N3        &kp N4    &kp N5                                         &kp N6  &kp N7     &kp N8     &kp N9   &kp N0                     &kp BACKSLASH
-&kp TAB             &kp Q   &kp W   &kp E         &kp R     &kp T                                          &kp Y   &kp U      &kp I      &kp O    &kp P                      &kp BACKSPACE
+&kp ESC             &kp N1  &kp N2  &kp N3        &kp N4    &kp N5                                         &kp N6  &kp N7     &kp N8     &kp N9   &kp N0                     &kp BACKSPACE
+&kp TAB             &kp Q   &kp W   &kp E         &kp R     &kp T                                          &kp Y   &kp U      &kp I      &kp O    &kp P                      &kp BACKSLASH
 &mt LCTRL CAPSLOCK  &kp A   &kp S   &kp D         &kp F     &kp G                                          &kp H   &kp J      &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON  &kp SQT
 &kp LSHFT           &kp Z   &kp X   &kp C         &kp V     &kp B   &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH                   &kp DEL
-                                    &kp LEFT_GUI  &kp LALT  &td1    &kp SPACE           &kp RET            &mo 2   &kp MINUS  &kp EQUAL
+                                    &kp LEFT_GUI  &kp LALT  &td1    &kp SPACE           &kp RET            &td2    &kp MINUS  &kp EQUAL
             >;
         };
 
@@ -186,10 +186,10 @@
             label = "WORK";
             bindings = <
 &trans  &trans  &trans    &trans    &trans             &trans                                                       &kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &trans
-&trans  &trans  &trans    &kp UP    &trans             &trans                                                       &mkp RCLK           &kp KP_N7          &kp KP_N8      &kp KP_N9        &kp KP_PLUS   &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT          &kp PERCENT                                                  &mkp LCLK           &kp KP_N4          &kp KP_N5      &kp KP_N6        &kp KP_PLUS   &kp LEFT_ALT
+&trans  &trans  &trans    &kp UP    &trans             &trans                                                       &trans              &kp KP_N7          &kp KP_N8      &kp KP_N9        &kp KP_PLUS   &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT          &kp PERCENT                                                  &trans              &kp KP_N4          &kp KP_N5      &kp KP_N6        &kp KP_PLUS   &kp LEFT_ALT
 &trans  &trans  &trans    &trans    &solidworks1       &solidworks2  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans              &kp KP_N1          &kp KP_N2      &kp KP_N3        &kp PERCENT   &trans
-                          &trans    &kp DOUBLE_QUOTES  &to 0         &trans                  &trans                 &mo 2               &kp KP_N0          &kp KP_DOT
+                          &trans    &kp DOUBLE_QUOTES  &to 0         &trans                  &trans                 &td2                &kp KP_N0          &kp KP_DOT
             >;
         };
 
@@ -203,7 +203,7 @@
 
             label = "FUNCTION";
             bindings = <
-&to 3      &to 4   &trans  &trans          &trans    &trans                                               &wp1    &wp2              &nu1            &wp3             &trans  &trans
+&trans     &to 4   &trans  &trans          &trans    &trans                                               &trans  &trans            &trans          &trans           &trans  &trans
 &kp GRAVE  &trans  &trans  &trans          &trans    &trans                                               &trans  &trans            &trans          &trans           &trans  &trans
 &kp F1     &kp F2  &kp F3  &kp F4          &kp F5    &kp F6                                               &trans  &kp LS(LEFT_GUI)  &kp LEFT_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &kp F7     &kp F8  &kp F9  &kp F10         &kp F11   &kp F12       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &trans  &trans            &trans          &trans           &trans  &trans
@@ -213,7 +213,7 @@
 
         BT {
             bindings = <
-&to 0  &td_bt0       &td_bt1       &td_bt2       &td_bt3       &td_bt4                                      &to 0       &to 0       &to 0       &to 0       &to 0       &out OUT_TOG
+&to 0  &td_bt0       &td_bt1       &td_bt2       &td_bt3       &td_bt4                                      &wp1        &wp2        &nu1        &wp3        &to 0       &out OUT_TOG
 &to 0  &to 0         &to 0         &to 0         &to 0         &to 0                                        &to 0       &to 0       &to 0       &to 0       &to 0       &to 0
 &to 0  &to 0         &to 0         &to 0         &to 0         &to 0                                        &to 0       &to 0       &to 0       &to 0       &to 0       &to 0
 &to 0  &to 0         &to 0         &to 0         &to 0         &to 0         &bootloader     &bootloader    &to 0       &to 0       &to 0       &to 0       &to 0       &to 0
